@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinning and Scaling Animation</title>
+    <style>
+        @keyframes spinScale {
+            0% {
+                transform: scale(1) rotate(0deg);
+                background-color: orange;
+            }
+
+            50% {
+                transform: scale(1.5) rotate(180deg);
+                background-color: purple;
+            }
+
+            100% {
+                transform: scale(1) rotate(360deg);
+                background-color: orange;
+            }
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius: 50%;
+            animation: spinScale 2s ease-in-out infinite;
+            margin: 100px 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="circle"></div>
+</body>
+
+</html>

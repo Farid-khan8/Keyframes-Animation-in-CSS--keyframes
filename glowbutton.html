@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Button</title>
+    <style>
+        @keyframes glow {
+            0% {
+                box-shadow: 0 0 5px #ff00ff;
+            }
+
+            50% {
+                box-shadow: 0 0 20px #ff00ff;
+            }
+
+            100% {
+                box-shadow: 0 0 5px #ff00ff;
+            }
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #ff00ff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: glow 1.5s ease-in-out infinite;
+            margin: 100px 100px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="button">Click Me</button>
+</body>
+
+</html>
